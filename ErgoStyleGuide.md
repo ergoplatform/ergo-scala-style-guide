@@ -32,12 +32,12 @@ Put one space after colons.
 ```scala
 // do this
 def getConf(key: String, defaultValue: String): String = {
-  // some code
+  // code
 }
 
 // don't put spaces before colons
 def calculateHeaderPortionInBytes(count : Int) : Int = {
-  // some code
+  // code
 }
 
 // don't omit spaces after colons

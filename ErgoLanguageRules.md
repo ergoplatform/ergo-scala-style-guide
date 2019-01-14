@@ -19,10 +19,10 @@ Avoid catching `Throwable` as it could be an extremely fatal exception that shou
 
 ```scala
 try {
-  something()
+  // code
 } catch {
   case e: Throwable =>
-    blaBla()
+    // code
 }
 ```
 
@@ -32,10 +32,10 @@ Instead do this:
 import scala.util.control.NonFatal
 
 try {
-  something()
+  // code
 } catch {
   case NonFatal(e) =>
-    blaBla()
+    // code
 }
 ```
 
@@ -57,6 +57,6 @@ Alternatives:
 
 ```scala
 def someFunction(param1: T1, param2: T2): Result = {
-  ???
+  // code
 }
 ```
